@@ -1,18 +1,52 @@
 \input{../Preambule}
-
+\newcommand{\bxi}{ \boldx_i }
 \usepackage{tikz}
 \usepackage{enumitem}
+\usepackage{txfonts}
+\usepackage{mathrsfs}
+\usepackage{fancyhdr}
+
 
 
 \usepackage{fancyhdr}
+\usetikzlibrary{calc,decorations.pathmorphing,patterns}
+\usepackage{listofitems}
+\tikzstyle{mynode}=[thick,draw=blue,fill=blue!20,circle,minimum size=22]
+\usepackage{amsaddr}
+\usepackage{mathrsfs}
+
+\makeatletter
+
+\pgfdeclaredecoration{penciline}{initial}{
+    \state{initial}[width=+\pgfdecoratedinputsegmentremainingdistance,auto corner on length=1mm,]{
+        \pgfpathcurveto%
+        {% From
+            \pgfqpoint{\pgfdecoratedinputsegmentremainingdistance}
+                            {\pgfdecorationsegmentamplitude}
+        }
+        {%  Control 1
+        \pgfmathrand
+        \pgfpointadd{\pgfqpoint{\pgfdecoratedinputsegmentremainingdistance}{0pt}}
+                        {\pgfqpoint{-\pgfdecorationsegmentaspect\pgfdecoratedinputsegmentremainingdistance}%
+                                        {\pgfmathresult\pgfdecorationsegmentamplitude}
+                        }
+        }
+        {%TO 
+        \pgfpointadd{\pgfpointdecoratedinputsegmentlast}{\pgfpoint{1pt}{1pt}}
+        }
+    }
+    \state{final}{}
+}
+\makeatother
+
 \pagestyle{fancy}
 %\renewcommand{\subsection{mark}[1]{\markright{#1}{}}
 \fancyhead{}
 \fancyfoot{} 
 %\fancyhead[LE,LO]{\tiny{\thepage}}
-\fancyhead[C]{\small\textsc{Économétrie, M1 Miash, S2}}
+\fancyhead[C]{\small\textsc{UGA, M1 MIASH-BDA, S2}}
 %fancyhead[CE,CO]{\tiny{\rightmark}}
-\fancyhead[L]{\small\textsc{UGA, FEG}}
+\fancyhead[L]{\small\textsc{ÉCONOMÉTRIE 2}}
 \fancyfoot[C]{\small{\thepage}}
 %\fancyfoot[R]{\small \textcopyright \ \  \small\textsc
 \fancyhead[R]{ \small\textsc{M. Urdanivia}}
@@ -35,17 +69,22 @@
 %\tikzset{line/.style={draw, -latex'}}
 %\onehalfspace
 
+%\includepdf{trame}
 \begin{titlepage}
 \centering
 	%\includegraphics[width=0.15\textwidth]{logoUGA2020
-	{\scshape\Large \textsc{Économétrie: S2, UGA, M1 Miash}\par}
+    {\scshape\Large \textbf{\textsc{ÉCONOMÉTRIE 2}}\par}
+	{\scshape\Large \textbf{\textsc{UGA, M1 MIASH-BDA, S2}}\par}
 	\vspace{1cm}
 	%{\scshape\large \textsc{Extremum Estimators(1)}\par}
 	%\vspace{1cm}
-	{\Large\bfseries \textsc{1: Modèles linéaires} \par}
-    \vspace{1cm}   
-	{\Large\bfseries \textsc{Endogénéité et variables instrumentales} \par}
-	\vspace{1cm}
+	{\Large\bfseries \textsc{MOD\'ELE DE RÉGRESSION LINÉAIRE:} \par}
+   % \vspace{1cm}   
+	{\Large\bfseries \textsc{ENDOGÉNÈITÉ ET VARIABLES INSTRUMENTALES} \par}
+   % \vspace{1cm}   
+	%{\Large\bfseries \textsc{RÉCAPITULATIF ET RÉSULTATS NON ASYMPTOTIQUES} \par}
+    %{\Large\bfseries \textsc{EXAMEN(L3 MIASH, S2)} \par}
+	%\vspace{1cm}
 	{(\textsc{Cette version: \today})\par}
 	\vspace{1cm}
 	{\large \textsc{Michal Urdanivia}
@@ -66,6 +105,7 @@
 \tableofcontents
 
 \newpage
+
 
 \section{Exogénéité(s) dans un modèle de régression linéaire}
 L'objectif d'un modèle de régression linéaire est de mesurer la relation entre une variable $Y\in\R$ 
@@ -217,18 +257,18 @@ de régresseurs exogènes, $\beta_1$ et $\beta_2$ sont les vecteurs de paramètr
 	&=\Exp(X_{1i}U_i) \\
 	&\neq 0
 	\end{align*}
-	et nous concluons que $\hat{\beta}_1 $ n'est pas convergent,
+	et nous concluons que $\hat{\beta}_{1n} $ n'est pas convergent,
 	\begin{align*}
-	\hat{\beta}_1 &\limp \beta_1 + \left(\Exp(X_{1i}X_{1i}^\top)-\Exp(X_{1i}X_{2i}^\top)\left( \Exp(X_{2i}X_{2i}^\top)\right)^{-1}\Exp(X_{2i}X_{1i}^\top)\right)^{-1}\Exp(X_{1i}U_i)\\
+	\hat{\beta}_{1n} &\limp \beta_1 + \left(\Exp(X_{1i}X_{1i}^\top)-\Exp(X_{1i}X_{2i}^\top)\left( \Exp(X_{2i}X_{2i}^\top)\right)^{-1}\Exp(X_{2i}X_{1i}^\top)\right)^{-1}\Exp(X_{1i}U_i)\\
 	&\neq \beta_1
 	\end{align*}
 	La non convergence de l'estimateur des MCO de $\beta_2$ peut être montré de manière similaire. Nous avons,
 	\begin{align*}
-	\hat{\beta}_2 = \beta_2 + (\boldX_2^\top\boldM_1\boldX_2)^{-1}\boldX_2^\top\boldM_1\boldU
+	\hat{\beta}_{2n} = \beta_2 + (\boldX_2^\top\boldM_1\boldX_2)^{-1}\boldX_2^\top\boldM_1\boldU
 	\end{align*}
 	où $\boldM_1 = \Id_n - \boldX_1(\boldX_1^\top\boldX_1)^{-1}\boldX_1^\top$. Et nous avons,
 	\begin{align*}
-	\hat{\beta}_2  &\limp \beta_2 + \left(\Exp(X_{2i}X_{2i}^\top)-\Exp(X_{2i}X_{1i}^\top)\left( \Exp(X_{1i}X_{1i}^\top)\right)^{-1}\Exp(X_{1i}X_{2i}^\top)\right)^{-1}\Exp(X_{2i}X_{1i}^\top)\Exp(X_{1i}X_{1i}^\top)^{-1}\Exp(X_{1i}U_i)\\
+	\hat{\beta}_{2n}  &\limp \beta_2 + \left(\Exp(X_{2i}X_{2i}^\top)-\Exp(X_{2i}X_{1i}^\top)\left( \Exp(X_{1i}X_{1i}^\top)\right)^{-1}\Exp(X_{1i}X_{2i}^\top)\right)^{-1}\Exp(X_{2i}X_{1i}^\top)\Exp(X_{1i}X_{1i}^\top)^{-1}\Exp(X_{1i}U_i)\\
 	&\neq \beta_2
 	\end{align*}
 
@@ -292,7 +332,7 @@ On appelle les appelle \emph{variables instrumentales}(VIs) ou plus simplement \
 des variables qui vérifient des condition du type \eqref{eq9} ainsi que la \emph{condition de rang} suivante,
 
 \begin{align}
-	\Rang\left(\Exp(Z_iX_i^\top)\right) = K
+	\Rang\left(\Exp(Z_iX_i^\top)\right) &= K
 	\label{eq10}
 \end{align}
 
@@ -320,65 +360,102 @@ et que pour chaque variables endogène nous avons une variables exogène(une VI)
 L'application de la méthode des moments avec la condition \eqref{eq9} suggère un estimateur comme 
 solution du système suivant de $K$ équations,
 \begin{align*}
-n^{-1}\sumiton Z_i\left(Y_i-X_i^\top\hat{\beta}^{VI}\right) = 0
+n^{-1}\sumiton Z_i\left(Y_i-X_i^\top\hat{\beta}^{VI}_n\right) = 0
 \end{align*}
 d'où,
 \begin{align*}
-\hat{\beta}^{VI} &= \left(\sumiton Z_iX_i^\top\right)^{-1}\sumiton Z_iY_i\\
+\hat{\beta}^{VI}_n &= \left(\sumiton Z_iX_i^\top\right)^{-1}\sumiton Z_iY_i\\
 &=(\boldZ^\top\boldX)^{-1}\boldZ^\top\boldY
 \end{align*}
 où $\boldX$ est la matrice $(n\times K)$ ayant pour élément $i$ $X_i^\top$, et $\boldZ$ est la matrice $(n\times K)$ ayant pour élément $i$ $Z_i^\top$.\\
-L'estimateur $\hat{\beta}^{VI}$ est appelé \emph{estimateur des variables instrumentales} de $\beta$.
+L'estimateur $\hat{\beta}^{VI}_n$ est appelé \emph{estimateur des variables instrumentales} de $\beta$.
 
 \subsection{Convergence et normalité asymptotique}
 
-La convergence de $\hat{\beta}^{VI}$ est obtenue sous \eqref{eq9}-\eqref{eq10} auxquelles on doit 
-ajouter les conditions suivantes:
-\begin{enumerate}[label = (B.\arabic*)]
+Pour établir la convergence de $\hat{\beta}^{VI}_n$ on utilise \eqref{eq9}-\eqref{eq10} auxquelles on doit 
+ajouter des conditions suivantes supplémentaires. Ceci est résumé ainsi:
+\begin{condition}(\textbf{conditions pour la convergence})
+\begin{enumerate}[label = (C1.\arabic*)]
 \item Les observations $\{(Y_i, X_i, Z_i)\}_{i=1}^n$ sont i.i.d.
+\item $Y_i = X_i^\top\beta + U_i$.
+\item $\Exp(Z_iU_i) = 0$.
+\item $\Rang\left(\Exp(Z_iX_i^\top)\right) = K$.
 \item $\Exp(X_{ik}^2) < \infty$ pour tout $k=1,...,K$.
 \item $\Exp(Z_{1ik}^2) < \infty$ pour tout $k=1,...,K_1$.
 \item $\Exp(U_i^2Z_iZ_i^\top)$ est définie positive.
 \end{enumerate}
+\label{cond1}
+\end{condition}
+
+\begin{propriete}(\textbf{Convergence})
+Sous les conditions de \eqref{cond1}
+\begin{align*}
+	\hat{\beta}^{VI}_n  &\limp \beta
+\end{align*}
+	\label{pr1}
+\end{propriete}
+\begin{proof}
 \'Ecrivons,
 \begin{align}
-\hat{\beta}^{VI} = \beta + \left(n^{-1}\sumiton Z_iX_i^\top\right)^{-1}n^{-1}\sumiton Z_iU_i
+\hat{\beta}^{VI}_n = \beta + \left(n^{-1}\sumiton Z_iX_i^\top\right)^{-1}n^{-1}\sumiton Z_iU_i
 \label{eq3}
 \end{align}
 Notons que sous les hypothèses faites plus haut, par l'inégalité de Cauchy-Schwartz,
 \begin{align*}
-\Exp(\abs{Z_{ir}X_{is}}) &\leq \sqrt{\Exp(Z_{ir}^2)\Exp(X_{is}^2)}\\
+\Exp(\abs{Z_{i,r}X_{i,s}}) &\leq \sqrt{\Exp(Z_{i,r}^2)\Exp(X_{i,s}^2)}\\
 &< \infty \ \textrm{pour tout} \ r, s = 1,...,K.
 \end{align*}
 Par conséquent, par le théorème de Slutsky,
 \begin{align*}
-\hat{\beta}^{VI}  &\limp \beta + \Exp(Z_iX_i^\top)^{-1}\Exp(Z_iU_i)\\
+\hat{\beta}^{VI}_n  &\limp \beta + \Exp(Z_iX_i^\top)^{-1}\Exp(Z_iU_i)\\
 &= \beta
 \end{align*}
-Afin de montrer la normalité asymptotique nous supposons aussi que,
-\begin{enumerate}[label = (B.\arabic*), resume]
+\end{proof}
+
+La normalité asymptotique est obtenue avec deux conditions supplémentaires. Ceci est résumé ainsi:
+\begin{condition}(\textbf{conditions pour la normalité asymptotique})
+\begin{enumerate}[label = (C2.\arabic*)]
 \item $\Exp(Z_{ik}^4) < \infty$, pour tout $k=1,...,K$. 
 \item $\Exp(U_i^4)<\infty$.
 \end{enumerate}
+\label{cond2}
+\end{condition}
+
+\begin{propriete}(\textbf{Normalité asymptotique})
+Sous les conditions dans \eqref{cond1} - \eqref{cond2},
+\begin{align*}
+	n^{1/2}(\hat{\beta}^{VI}_n - \beta ) &\limd (\Exp(Z_iX_i^\top))^{-1}\mathcal{N}\left(0,\Exp(U_i^2Z_iZ_i^\top)\right)\\
+&=\mathcal{N}\left(0,  \Vr\right)
+\end{align*}
+où 
+\begin{align*}
+\Vr &= (\Exp(Z_iX_i^\top))^{-1}\Exp(U_i^2Z_iZ_i^\top) (\Exp(X_iZ_i^\top))^{-1}
+\end{align*}
+	\label{pr2}
+\end{propriete}
+
+\begin{proof}
 \'Ecrivons \eqref{eq3} comme suit,
 \begin{align*}
-n^{1/2}(\hat{\beta}^{VI} - \beta ) = \left(n^{-1}\sumiton Z_iX_i^\top\right)^{-1}n^{-1/2} \sumiton Z_iU_i
+n^{1/2}(\hat{\beta}_n^{VI} - \beta ) = \left(n^{-1}\sumiton Z_iX_i^\top\right)^{-1}n^{-1/2} \sumiton Z_iU_i
 \end{align*}
-Notons que du fait des hypothèses précédentes,
+Notons que du fait des hypothèses précédentes, pour tout $r, s = 1, \ldots, K$, 
 \begin{align*}
-\Exp\left(\abs{U_i^2Z_{ir}Z_{is}}\right) &\leq \left(\Exp(U_i^4))^{1/2}\Exp(Z_{ir}^4Z_{is}^4\right)^{1/4}\\
+\Exp\left(\abs{U_i^2Z_{i,r}Z_{i,s}}\right) &\leq \left(\Exp(U_i^4)\right)^{1/2}\left(\Exp(Z_{i,r}^4)\Exp(Z_{i,s}^4)\right)^{1/4}\\
 & < \infty
 \end{align*}
 Par conséquent, par le théorème central-limite et le théorème de convergence de Cramer,
 \begin{align*}
-n^{1/2}(\hat{\beta}^{VI} - \beta ) &\limd (\Exp(Z_iX_i^\top))^{-1}\mathcal{N}\left(0,\Exp(U_i^2Z_iZ_i^\top)\right)\\
+n^{1/2}(\hat{\beta}_n^{VI} - \beta ) &\limd (\Exp(Z_iX_i^\top))^{-1}\mathcal{N}\left(0,\Exp(U_i^2Z_iZ_i^\top)\right)\\
 &=\mathcal{N}\left(0,  (\Exp(Z_iX_i^\top))^{-1}\Exp(U_i^2Z_iZ_i^\top) (\Exp(X_iZ_i^\top))^{-1}\right)
 \end{align*}
+\end{proof}
+
 La matrice de variances-covariances asymptotique prend une forme en sandwich et peut être estimé de manière convergente par,
 \begin{align*}
 \left(n^{-1}\sumiton Z_iX_i^\top\right)^{-1} n^{-1} \sumiton (\hat{U}_i^2Z_iZ_i^\top) \left(n^{-1}\sumiton X_iZ_i^\top\right)^{-1}
 \end{align*}
-où $\hat{U}_i = Y_i - X_i^\top\hat{\beta}^{VI}$.
+où $\hat{U}_i = Y_i - X_i^\top\hat{\beta}_n^{VI}$.
 
  
  

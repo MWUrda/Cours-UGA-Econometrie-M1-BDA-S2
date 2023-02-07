@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.10)  27 JAN 2022 10:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.10)  7 FEB 2023 17:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Volumes/GoogleDrive/Mon Drive/Syllabus/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.tex"
-(/Volumes/GoogleDrive/Mon Drive/Syllabus/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.tex
+**/Users/michalurdanivia/Documents/GitHub/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.tex
+(/Users/michalurdanivia/Documents/GitHub/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (../Preambule.tex (/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsart.cls
@@ -1790,92 +1790,218 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 109.
 \c@example=\count402
 \c@remarque=\count403
 \c@exemple=\count404
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip147
+\enit@outerparindent=\dimen391
+\enit@toks=\toks66
+\enit@inbox=\box76
+\enitdp@description=\count405
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/txfonts.sty
+Package: txfonts 2008/01/22 v3.2.1
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
+\symitalic=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/lmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmr/bx/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/txss/m/n --> OT1/txss/b/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/txtt/m/n --> OT1/txtt/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/lmm/m/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/lmm/b/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
+\symlettersA=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 70.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/msa/m/n --> U/txsya/m/n on input line 93.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/msb/m/n --> U/txsyb/m/n on input line 102.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
+\symsymbolsC=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/txsyc/m/n --> U/txsyc/bx/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/txex/m/n --> OMX/txex/bx/n on input line 121.
+\symlargesymbolsA=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
+(Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
+LaTeX Info: Redefining \not on input line 1043.
+LaTeX Info: Redefining \textsquare on input line 1063.
+LaTeX Info: Redefining \openbox on input line 1064.
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
-\f@nch@headwidth=\skip147
-\f@nch@O@elh=\skip148
-\f@nch@O@erh=\skip149
-\f@nch@O@olh=\skip150
-\f@nch@O@orh=\skip151
-\f@nch@O@elf=\skip152
-\f@nch@O@erf=\skip153
-\f@nch@O@olf=\skip154
-\f@nch@O@orf=\skip155
-) (/Volumes/GoogleDrive/Mon Drive/Syllabus/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.aux)
+\f@nch@headwidth=\skip148
+\f@nch@O@elh=\skip149
+\f@nch@O@erh=\skip150
+\f@nch@O@olh=\skip151
+\f@nch@O@orh=\skip152
+\f@nch@O@elf=\skip153
+\f@nch@O@erf=\skip154
+\f@nch@O@olf=\skip155
+\f@nch@O@orf=\skip156
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen392
+\pgfdecoratedremainingdistance=\dimen393
+\pgfdecoratedinputsegmentcompleteddistance=\dimen394
+\pgfdecoratedinputsegmentremainingdistance=\dimen395
+\pgf@decorate@distancetomove=\dimen396
+\pgf@decorate@repeatstate=\count406
+\pgfdecorationsegmentamplitude=\dimen397
+\pgfdecorationsegmentlength=\dimen398
+)
+\tikz@lib@dec@box=\box77
+) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
+ (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
+)) (/usr/local/texlive/2018/texmf-dist/tex/generic/listofitems/listofitems.sty (/usr/local/texlive/2018/texmf-dist/tex/generic/listofitems/listofitems.tex
+\loi_nestcnt=\count407
+)
+Package: listofitems 2018/03/13 v1.53 Grab items in lists using user-specified sep char (CT)
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsaddr/amsaddr.sty
+\c@g@author=\count408
+) (/Users/michalurdanivia/Documents/GitHub/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.aux)
 \openout1 = `Syllabus_Econometrie_S2_UGAM1Miash.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 26.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 26.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 60.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omltxmi.fd
+File: omltxmi.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 60.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omstxsy.fd
+File: omstxsy.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 60.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/omxtxex.fd
+File: omxtxex.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 60.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxexa.fd
+File: utxexa.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 60.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 60.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/cbfonts-fd/lgrcmr.fd
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 26.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 60.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 26.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Try loading font information for T1+txr on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txr.fd
+File: t1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 26.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/ot1txr.fd
+File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 26.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+LaTeX Font Info:    Try loading font information for U+txsya on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsya.fd
+File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 26.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/omxlmex.fd
-File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsyb.fd
+File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 26.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 26.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 26.
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 26.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 60.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Try loading font information for U+txmia on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxmia.fd
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 60.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/utxsyc.fd
+File: utxsyc.fd 2000/12/15 v3.1
 ) (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count405
-\scratchdimen=\dimen391
-\scratchbox=\box76
-\nofMPsegments=\count406
-\nofMParguments=\count407
-\everyMPshowfont=\toks66
-\MPscratchCnt=\count408
-\MPscratchDim=\dimen392
-\MPnumerator=\count409
-\makeMPintoPDFobject=\count410
-\everyMPtoPDFconversion=\toks67
+\scratchcounter=\count409
+\scratchdimen=\dimen399
+\scratchbox=\box78
+\nofMPsegments=\count410
+\nofMParguments=\count411
+\everyMPshowfont=\toks67
+\MPscratchCnt=\count412
+\MPscratchDim=\dimen400
+\MPnumerator=\count413
+\makeMPintoPDFobject=\count414
+\everyMPtoPDFconversion=\toks68
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1893,23 +2019,23 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box77
-Package hyperref Info: Link coloring ON on input line 26.
+\AtBeginShipoutBox=\box79
+Package hyperref Info: Link coloring ON on input line 60.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count411
+\c@section@level=\count415
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
- (/Volumes/GoogleDrive/Mon Drive/Syllabus/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.out) (/Volumes/GoogleDrive/Mon Drive/Syllabus/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.out)
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
+ (/Users/michalurdanivia/Documents/GitHub/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.out) (/Users/michalurdanivia/Documents/GitHub/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.out)
 \@outlinefile=\write5
 \openout5 = `Syllabus_Econometrie_S2_UGAM1Miash.out'.
 
-\c@lstlisting=\count412
+\c@lstlisting=\count416
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1945,21 +2071,24 @@ LaTeX Info: Redefining \nameref on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \degres on input line 26.
-LaTeX Info: Redefining \dots on input line 26.
+LaTeX Info: Redefining \degres on input line 60.
+LaTeX Info: Redefining \dots on input line 60.
 
 Package french.ldf Warning: Please load the "listings" package
-(french.ldf)                AFTER babel/french; reported on input line 26.
+(french.ldf)                AFTER babel/french; reported on input line 60.
 
 
 Package french.ldf Warning: Please load the "natbib" package
-(french.ldf)                BEFORE babel/french; reported on input line 26.
+(french.ldf)                BEFORE babel/french; reported on input line 60.
 
+Package french.ldf Info: Setting StandardItemizeEnv=true for
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 60.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
-(french.ldf)             compatibility with enumerate package,
-(french.ldf)             reported on input line 26.
-LaTeX Info: Redefining \up on input line 26.
-LaTeX Info: Redefining \microtypecontext on input line 26.
+(french.ldf)             compatibility with enumitem package,
+(french.ldf)             reported on input line 60.
+LaTeX Info: Redefining \up on input line 60.
+LaTeX Info: Redefining \microtypecontext on input line 60.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1972,8 +2101,8 @@ Package microtype Info: Adjustment of character kerning enabled.
 Package microtype Info: Using default kerning set `alltext'.
 Package microtype Info: Redefining babel's language switching commands.
 Package microtype Info: Switching off French babel's active characters (:;!?).
-(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-ptm.cfg
+File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
@@ -1981,24 +2110,11 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 File: tikzlibrarysnakes.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.7)
 
 Package pgf: Warning! Snakes have been superseded by decorations. Please use the decoration libraries instead of the snakes library.
-(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen393
-\pgfdecoratedremainingdistance=\dimen394
-\pgfdecoratedinputsegmentcompleteddistance=\dimen395
-\pgfdecoratedinputsegmentremainingdistance=\dimen396
-\pgf@decorate@distancetomove=\dimen397
-\pgf@decorate@repeatstate=\count413
-\pgfdecorationsegmentamplitude=\dimen398
-\pgfdecorationsegmentlength=\dimen399
-)
-\tikz@lib@dec@box=\box78
-) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.shapes.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.shapes.code.tex))) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
-) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.shapes.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.shapes.code.tex))) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
  (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
-\arrowsize=\dimen400
+\arrowsize=\dimen401
 )) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
  (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
@@ -2021,39 +2137,27 @@ File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
  (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box79
-\pgfnodeparttwobox=\box80
-\pgfnodepartthreebox=\box81
-\pgfnodepartfourbox=\box82
-\pgfnodeparttwentybox=\box83
-\pgfnodepartnineteenbox=\box84
-\pgfnodeparteighteenbox=\box85
-\pgfnodepartseventeenbox=\box86
-\pgfnodepartsixteenbox=\box87
-\pgfnodepartfifteenbox=\box88
-\pgfnodepartfourteenbox=\box89
-\pgfnodepartthirteenbox=\box90
-\pgfnodeparttwelvebox=\box91
-\pgfnodepartelevenbox=\box92
-\pgfnodeparttenbox=\box93
-\pgfnodepartninebox=\box94
-\pgfnodeparteightbox=\box95
-\pgfnodepartsevenbox=\box96
-\pgfnodepartsixbox=\box97
-\pgfnodepartfivebox=\box98
-)))
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/14.4'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `T1/lmr/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/cmr/bx/sc' tried instead on input line 46.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/12'.
-(microtype)             Ignoring protrusion settings for this character.
- [0
+\pgfnodepartlowerbox=\box80
+\pgfnodeparttwobox=\box81
+\pgfnodepartthreebox=\box82
+\pgfnodepartfourbox=\box83
+\pgfnodeparttwentybox=\box84
+\pgfnodepartnineteenbox=\box85
+\pgfnodeparteighteenbox=\box86
+\pgfnodepartseventeenbox=\box87
+\pgfnodepartsixteenbox=\box88
+\pgfnodepartfifteenbox=\box89
+\pgfnodepartfourteenbox=\box90
+\pgfnodepartthirteenbox=\box91
+\pgfnodeparttwelvebox=\box92
+\pgfnodepartelevenbox=\box93
+\pgfnodeparttenbox=\box94
+\pgfnodepartninebox=\box95
+\pgfnodeparteightbox=\box96
+\pgfnodepartsevenbox=\box97
+\pgfnodepartsixbox=\box98
+\pgfnodepartfivebox=\box99
+))) [0
 Non-PDF special ignored!
 <special> header=pstricks.pro
 Non-PDF special ignored!
@@ -2081,85 +2185,70 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 <special> ps:tx@Dict begin  gsave STV CP T /ps@rot 0 def grestore  end
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Volumes/GoogleDrive/Mon Drive/Syllabus/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.toc)
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/michalurdanivia/Documents/GitHub/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.toc)
 \tf@toc=\write6
 \openout6 = `Syllabus_Econometrie_S2_UGAM1Miash.toc'.
 
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/lmr/m/sc/10'.
-(microtype)             Ignoring protrusion settings for this character.
 
 
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
- Make it at least 12.80502pt.
+ Make it at least 12.64503pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [1]
 
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
- Make it at least 12.80502pt.
+ Make it at least 12.64503pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [2]
-
-LaTeX Warning: The counter will not be printed.
-             The label is: - on input line 124.
-
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 147.
-(/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 203.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txtt.fd
+File: t1txtt.fd 2000/12/15 v3.1
 )
 Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
+(microtype)             `txtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 147.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 147.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-) (/Volumes/GoogleDrive/Mon Drive/Syllabus/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.bbl
+ (/Users/michalurdanivia/Documents/GitHub/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.bbl
 
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
- Make it at least 12.80502pt.
+ Make it at least 12.64503pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [3])
 
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
- Make it at least 12.80502pt.
+ Make it at least 12.64503pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
- (/Volumes/GoogleDrive/Mon Drive/Syllabus/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
+ (/Users/michalurdanivia/Documents/GitHub/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
 Package rerunfilecheck Info: File `Syllabus_Econometrie_S2_UGAM1Miash.out' has not changed.
-(rerunfilecheck)             Checksum: CD405FEFFE129D5FA503F8BFDD61F038;609.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
+(rerunfilecheck)             Checksum: 5545A3F18EBB4690683F3EEE6A0AF95D;735.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
  ) 
 Here is how much of TeX's memory you used:
- 43983 strings out of 492649
- 838068 string characters out of 6129621
- 1130346 words of memory out of 5000000
- 46783 multiletter control sequences out of 15000+600000
- 596206 words of font info for 107 fonts, out of 8000000 for 9000
+ 45056 strings out of 492649
+ 853860 string characters out of 6129621
+ 1143919 words of memory out of 5000000
+ 47711 multiletter control sequences out of 15000+600000
+ 606821 words of font info for 230 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 57i,11n,92p,10550b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/cm-super/sfxc1440.pfb>
-Output written on "/Volumes/GoogleDrive/Mon Drive/Syllabus/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.pdf" (5 pages, 190859 bytes).
+ 57i,11n,92p,10548b,638s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /Users/michalurdanivia/Documents/GitHub/Cours-UGA-Econometrie-M1Miash-S2/Cours/Syllabus/Syllabus_Econometrie_S2_UGAM1Miash.pdf (5 pages, 63696 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
- 36 named destinations out of 1000 (max. 500000)
- 27729 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 152 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 56409 words of extra memory for PDF output out of 61914 (max. 10000000)
 
