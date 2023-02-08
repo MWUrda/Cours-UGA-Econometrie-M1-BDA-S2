@@ -463,19 +463,119 @@ où $\hat{U}_i = Y_i - X_i^\top\hat{\beta}_n^{VI}$.
  \appendix
  
  
- 
- 
- 
- 
- 
- 
- 
- 
+ \section{Matrices de projection}
+ Considérons l'équation en version matricielle 
+Nous pouvons penser à $\boldY$ et aux colonnes $\boldX$ comme des éléments de l'espace euclidien à $n$ dimensions, $\R^n$. On peut définir un sous-espace de $\R^n$ appelé l'\emph{espace des colonnes} d'une matrice $n\times K$, $\boldX$. Il s'agit de la collection de tous les vecteurs dans $\R^n$ qui peuvent s'écrire comme des combinaisons linéaires des colonnes de $\boldX$,
+\begin{align*}
+\mathcal{S}(\boldX) = \left\{z \in \R^n: z = \boldX b, b = (b_1, b_2,...,b_K) \in \R^K  \right\}
+\end{align*}
+\'Etant donné deux vecteurs $a$, $b$, dans $\R^n$, la distance entre $a$ et $b$ est donné par la norme euclidienne\footnote{Pour un vecteur $x=(x_1, x_2,...,x_n)$ sa norme euclidienne est définie comme $||x|| = \sqrt{x^\top x} = \sqrt{\sumobs x_i^2}$.} de leur différence $||a-b|| = \sqrt{(a-b)^\top(a-b)}$. En conséquence, le problème des moindres carrés, à savoir la minimisation de la somme des carrés des erreurs, $(\boldY-\boldX b)^\top(\boldY-\boldX b)$, est celui de trouver, parmi tous les éléments de $\mathcal{S}(\boldX)$, celui dont la distance par rapport à $\boldY$ est la plus petite,
+\begin{align*}
+\underset{\tilde{\boldY}\in \mathcal{S}(\boldX)}{\min} ||\boldY - \tilde{\boldY}||^2
+\end{align*}
+Le point le plus proche est obtenu en "traçant une perpendiculaire". Autrement dit, une solution au problème des moindres carrés, $\hat{Y} = \boldX\hat{\beta}$ doit être choisie de sorte que le vecteur des résidus, $\hat{\boldU} = \boldY-\hat{\boldY}$ soit orthogonal(perpendiculaire) à chaque colonne de $\boldX$,
+\begin{align*}
+\hat{\boldU}^\top\boldX = 0
+\end{align*}
+Un  résultat de cela est que $\hat{\boldU}$ est orthogonal à chaque élément de $\mathcal{S}(\boldX)$. En effet, si $z\in \mathcal{S}(\boldX)$, alors il existe $b\in\R^K$ tel que $z=\boldX b$, et,
+\begin{align*}
+\hat{\boldU}^\top z &= \hat{\boldU}^\top\boldX b\\
+& = 0
+\end{align*}
+La collection des éléments de $\R^n$ orthogonaux à $\mathcal{S}(\boldX)$ est appelée \emph{complément orthogonal} de $\mathcal{S}(\boldX)$,
+\begin{align*}
+\mathcal{S}^\perp(\boldX) = \left\{z \in \R^n: z^\top\boldX=0\right\}
+\end{align*}
+Soulignons que tout élément de $\mathcal{S}^\perp(\boldX)$ est orthogonal à chaque élément de $\mathcal{S}(\boldX)$.\\
+Comme nous l'avions vu dans le cours précédent, la solution au problème des moindres carrés est donnée par,
+\begin{align*}
+\hat{\boldY} &= \boldX\hat{\beta}\\
+&=\boldX(\boldX^\top\boldX)^{-1}\boldX^\top\boldY\\
+&=\boldP_{\boldX}\boldY
+\end{align*}
+où 
+\begin{align*} \boldP_{\boldX} = \boldX(\boldX^\top\boldX)^{-1}\boldX^\top
+\end{align*}
+est appelée \emph{matrice de projection orthogonale}. Pour tout vecteur $\boldY\in\R^n$,
+\begin{align*}
+\boldP_{\boldX}\boldY \in \mathcal{S}(\boldX)
+\end{align*}
+En outre, le vecteur des résidus est dans  $\mathcal{S}^\perp(\boldX)$,
+\begin{align}
+\boldY - \boldP_{\boldX}\boldY \in \mathcal{S}^\perp(\boldX)
+\label{eq12}
+\end{align}
+Pour montrer \eqref{eq15}, notons d'abord, qu'étant donné que les colonnes de $\boldX$ sont dans $\mathcal{S}(\boldX)$,
+\begin{align*}
+\boldP_\boldX\boldX &= \boldX(\boldX\boldX)^{-1}\boldX^\top\boldX\\
+&=\boldX
+\end{align*}
+et comme $\boldP_\boldX$ est une matrice symétrique,
+\begin{align*}
+\boldX^\top\boldP_\boldX = \boldX^\top
+\end{align*}
+Maintenant,
+\begin{align*}
+\boldX^\top(\boldY - \boldP_\boldX\boldY) &= \boldX^\top\boldY-\boldX^\top\boldP_\boldX\boldY\\
+& = \boldX^\top\boldY-\boldX^\top\boldY\\
+&=0 
+\end{align*}
+Ainsi, par définition, les résidus $\boldY - \boldP_\boldX\boldY\in\mathcal{S}^\perp(\boldX)$. Les résidus peuvent s'écrire,
+\begin{align*}
+\hat{\boldU} &= \boldY-\boldP_\boldX\boldY \\
+&= (\Id_n - \boldP_\boldX)\boldY\\
+& = \boldM_\boldX\boldY
+\end{align*}
+où,
+\begin{align*}
+\boldM_\boldX &= \Id_n - \boldP_\boldX\\
+& = \Id_n - \boldX(\boldX^\top\boldX)^{-1}\boldX^\top
+\end{align*}
+est une matrice de projection dans $\mathcal{S}^\perp(\boldX)$.\\
+Les matrices $\boldP_\boldX$ et $\boldM_\boldX$ présentent les propriétés suivantes.
+\begin{enumerate}
+\item $\boldP_\boldX+\boldM_\boldX = \Id_n$. Ceci implique, que pour tout $\boldY\in \R^n$,
+\begin{align*}
+\boldY = \boldP_\boldX\boldY+\boldM_\boldX\boldY
+\end{align*}
+\item $\boldP_\boldX$ et $\boldM_\boldX$ sont symétriques,
+\begin{align*}
+\boldP_\boldX^\top = \boldP_\boldX, \ \ \ \boldM_\boldX^\top= \boldM_\boldX
+\end{align*}
+\item $\boldP_\boldX$ et $\boldM_\boldX$ sont idempotentes,
+\begin{align*}
+\boldP_\boldX\boldP_\boldX = \boldP_\boldX, \ \ \ \boldM_\boldX \boldM_\boldX= \boldM_\boldX
+\end{align*}
+En effet,
+\begin{align*}
+\boldP_\boldX\boldP_\boldX &= \left(\boldX(\boldX^\top\boldX)^{-1}\boldX^\top\right)\left(\boldX(\boldX^\top\boldX)^{-1}\boldX^\top\right)\\ 
+&= \boldX(\boldX^\top\boldX)^{-1}\boldX^\top \\
+&= \boldP_\boldX
+\end{align*}
+de même,
+\begin{align*}
+\boldM_\boldX\boldM_\boldX &= (\Id_n - \boldP_\boldX)(\Id_n - \boldP_\boldX)\\
+& = \Id_n - 2\boldP_\boldX + \boldP_\boldX\boldP_\boldX\\
+&=\Id_n - \boldP_\boldX\\
+&=\boldM_\boldX
+\end{align*}
+\item $\boldP_\boldX$ et $\boldM_\boldX$ sont orthogonales,
+\begin{align*}
+\boldP_\boldX\boldM_\boldX &= \boldP_\boldX(\Id_n -  \boldP_\boldX)\\
+& =  \boldP_\boldX -  \boldP_\boldX \boldP_\boldX\\
+&= \boldP_\boldX- \boldP_\boldX\\
+&=0
+\end{align*}
+Cette propriété implique que $\boldM_\boldX\boldX = 0$. En effet,
+\begin{align*}
+\boldM_\boldX\boldX &= (\Id_n - \boldP_\boldX)\boldX\\ 
+&= \boldX-\boldP_\boldX\boldX\\
+& = \boldX - \boldX\\
+& = 0
+\end{align*}
+\end{enumerate}
+Observons que, dans la discussion ci-dessus, aucune des hypothèses quant au modèle de régression n'ont été utilisées. \'Etant donné des données, $\boldY$ et $\boldX$, nous pouvons toujours calculer l'estimateur des moindres carrés, indépendamment du processus générateur des données derrière les données. Néanmoins, nous avons besoin d'un modèle(i.e., d'hypothèses) pour pouvoir discuter des propriétés d'un estimateur(e.g., le fait qu'il soit ou non sans biais, etc).
 
-
- 
-
- 
 
 \bibliographystyle{jpe}
 \bibliography{Biblio.bib}
