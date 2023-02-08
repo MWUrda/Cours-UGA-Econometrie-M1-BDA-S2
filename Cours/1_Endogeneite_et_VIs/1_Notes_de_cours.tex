@@ -225,7 +225,122 @@ de régresseurs exogènes, $\beta_1$ et $\beta_2$ sont les vecteurs de paramètr
 \begin{align*}
 	\boldY = \boldX_1\beta_1 + \boldX_2\beta_2 + \boldU,
 	\end{align*}
-	où $\boldY$ est le vecteur $(n\times 1)$ ayant pour élément $i$ $Y_i$, $\boldX_1$ est la matrice $(n\times K_1)$ de régresseurs endogènes ayant pour ligne $i$ $X_{1i}^\top$, $\boldX_2$ est la matrice $(n\times K_2)$ de régresseurs exogènes ayant pour ligne $i$ $X_{2i}^\top$, et $\boldU$ est le vecteur $(n\times 1)$ ayant pour élément $i$ $U_i$. L'estimateur des MCO de $\beta_1$ est,
+	où $\boldY$ est le vecteur $(n\times 1)$ ayant pour élément $i$ $Y_i$, $\boldX_1$ est la matrice $(n\times K_1)$ de régresseurs endogènes ayant pour ligne $i$ $X_{1i}^\top$, $\boldX_2$ est la matrice $(n\times K_2)$ de régresseurs exogènes ayant pour ligne $i$ $X_{2i}^\top$, et $\boldU$ est le vecteur $(n\times 1)$ ayant pour élément $i$ $U_i$. L'estimateur des MCO de $\beta_1$ est\footnote{
+Cela provient de la géométrie de l'estimateur des MCO. En effet,
+Considérons la partition de la matrice des régresseurs, $\boldX$,
+\begin{align*}
+\boldX = \left(\boldX_1 \  \boldX_2\right)
+\end{align*}
+et écrivons le modèle comme suit,
+\begin{align*}
+\boldY = \boldX_1\beta_1 + \boldX_2\beta_2 + \boldU
+\end{align*}
+où $\boldX_1$ est une matrice $(n\times K_1)$, $\boldX_2$ est une matrice $(n\times K_2)$, $K_1+K_2 = K$, et,
+\begin{align*}
+\beta = \left(
+\begin{array}{c}
+\beta_1\\
+\beta_2
+\end{array}
+\right)
+\end{align*}
+$\beta_1$ et $\beta_2$ étant des vecteurs de paramètres, respectivement, $(K_1\times 1)$ et $(K_2\times 1)$. Partant de cette décomposition du modèle de régression concentrons nous sur un groupe de variables et leurs paramètres correspondants, par exemple $\boldX_1$ et $\beta_1$.\\\\
+ Soit l'estimateur des moindres carrés de $\beta$,
+\begin{align*}
+\hat{\beta} = \left(
+\begin{array}{c}
+\hat{\beta}_1\\
+\hat{\beta}_2
+\end{array}
+\right)
+\end{align*}
+Nous pouvons écrire la version suivante des équations normales,
+\begin{align*}
+\left(\boldX^\top\boldX\right)\hat{\beta}=\boldX^\top\boldY
+\end{align*}
+comme suit,
+\begin{align*}
+\left(
+\begin{array}{cc}
+\boldX_1^\top\boldX_1&\boldX_1^\top\boldX_2\\
+\boldX_2^\top\boldX_1&\boldX_2^\top\boldX_2
+\end{array}
+\right)
+\left(
+\begin{array}{c}
+\hat{\beta}_1\\
+\hat{\beta}_2
+\end{array}
+\right)
+=
+\left(
+\begin{array}{c}
+\boldX_1^\top\boldY\\
+\boldX_2^\top\boldY
+\end{array}
+\right)
+\end{align*}
+On peut  obtenir des expressions pour $\hat{\beta}_1$ et $\hat{\beta}_2$ par inversion de la matrice partitionnée à gauche de l'équation ci-dessus. Alternativement, définissons $\boldM_2$ comme la matrice de projection sur l'espace orthogonal à l'espace $\mathcal{S}(\boldX_2)$,
+\begin{align*}
+\boldM_2 = \Id_n - \boldX_2(\boldX_2^\top\boldX_2)^{-1}\boldX_2^\top
+\end{align*}
+alors,
+\begin{align}
+\hat{\beta}_1 = (\boldX_1^\top\boldM_2 \boldX_1)^{-1}\boldX_1^\top\boldM_2\boldY
+\label{eq17}
+\end{align}
+Pour montrer cela, commençons par écrire,
+\begin{align}
+\boldY = \boldX_1\hat{\beta}_1+\boldX_2\hat{\beta}_2 + \hat{\boldU}
+\label{eq13}
+\end{align} 
+Notons que par construction,
+\begin{align*}
+\boldM_2\hat{\boldU} &= \hat{\boldU}(\hat{\boldU} \ \textrm{est orthogonal à} \ \boldX_2)\\
+\boldM_2\boldX_2 &= 0\\
+\boldX_1^\top\hat{\boldU} &=0\\
+\boldX_2^\top\hat{\boldU} &=0
+\end{align*}
+Substituons l'équation \eqref{eq13} dans la partie droite de l'équation \eqref{eq12},
+\begin{align*}
+\left(\boldX_1^\top\boldM_2\boldX_1\right)^{-1}
+\boldX_1^\top\boldM_2\boldY&=\left(\boldX_1^\top\boldM_2\boldX_1\right)^{-1}
+\boldX_1^\top\boldM_2\left(\boldX_1\hat{\beta}_1+\boldX_2\hat{\beta}_2 + \hat{\boldU}\right)\\
+&=\left(\boldX_1^\top\boldM_2\boldX_1\right)^{-1}
+\boldX_1^\top\boldM_2\boldX_1\hat{\beta}_1\\
+ &\ \ \ +
+\left(\boldX_1^\top\boldM_2\boldX_1\right)^{-1}
+\boldX_1^\top\hat{\boldU} \ \ (\textrm{car \ }\boldM_2\boldX_2 = 0 \textrm{ \ et \ } 
+ \boldM_2\hat{\boldU} = \hat{\boldU})\\
+&=\hat{\beta}_1
+\end{align*}
+\'Etant donné que $\boldM_2$ est symétrique et idempotente, on peut écrire,
+\begin{align*}
+\hat{\beta}_1 &= \left((\boldM_2\boldX_1)^\top(\boldM_2\boldX_1)\right)^{-1}
+(\boldM_2\boldX_1)^\top(\boldM_2\boldY)\\
+&=\left(\tilde{\boldX}_1^\top\tilde{\boldX}_1\right)^{-1}\tilde{\boldX}_1\tilde{\boldY}
+\end{align*}
+où,
+\begin{align*}
+\tilde{\boldX}_1&=\boldM_2\boldX_1\\
+&= \boldX_1 - \boldX_2(\boldX_2^\top\boldX_2)^{-1}\boldX_2^\top\boldX_1
+\end{align*}
+à savoir les résidus de la régression de $\boldX_1$ sur $\boldX_2$. Et où,
+\begin{align*}
+\tilde{\boldY}&=\boldM_2\boldY\\
+&= \boldY - \boldX_2(\boldX_2^\top\boldX_2)^{-1}\boldX_2^\top\boldY
+\end{align*}
+à savoir les résidus de la régression de $\boldY$ sur $\boldX_2$.\\\\
+Ainsi, pour obtenir les coefficients de $K_1$ premiers régresseurs, plutôt que de réaliser la régression avec les $K_1+K_2 =K$ régresseurs, on peut régresser $\boldY$ sur $\boldX_2$ pour obtenir les résidus $\tilde{\boldY}$, régresser $\boldX_1$ sur $\boldX_2$ pour obtenir les résidus $\tilde{\boldX}_1$, et alors régresser $\tilde{\boldY}$ sur $\tilde{\boldX}_1$ pour obtenir $\hat{\beta}_1$. Autrement dit, $\hat{\beta}_1$ décrit l'effet de $\boldX_1$ une fois que ceux de $\boldX_2$ ont été contrôlés.\\\\
+De manière similaire que pour $\hat{\beta}_1$, nous avons pour $\hat{\beta}_2$,
+\begin{align*}
+\hat{\beta}_2 = (\boldX_2^\top\boldM_1\boldX_2)^{-1} \boldX_2^\top\boldM_1\boldY
+\end{align*}
+où,
+\begin{align*}
+\boldM_1 = \Id_n - \boldX_1(\boldX_1^\top\boldX_1)^{-1}\boldX_1^\top.
+\end{align*}
+	},
 	\begin{align*}
 	\widehat{\beta}_{1n} &= (\boldX_1^\top\boldM_2\boldX_1)^{-1}\boldX_1^\top\boldM_2\boldY \\
 	&=\beta_1 +(\boldX_1^\top\boldM_2\boldX_1)^{-1}\boldX_1^\top\boldM_2\boldU
