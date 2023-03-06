@@ -1,0 +1,12 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem[{Wooldridge(2010)}]{Wooldridge2010}
+Wooldridge, Jeffrey~M. 2010.
+\newblock \emph{Econometric analysis of cross section and panel data}.
+\newblock The MIT Press.
+
+\end{thebibliography}
