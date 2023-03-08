@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.10)  6 MAR 2023 11:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.11.10)  8 MAR 2023 10:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2561,13 +2561,9 @@ Package Fancyhdr Warning: \headheight is too small (8.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [1]
-
-Package natbib Warning: Citation `Romer1993QJE' on page 2 undefined on input li
-ne 112.
-
 LaTeX Font Info:    Try loading font information for T1+txtt on input line 116.
 
-(/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txtt.fd
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2576,19 +2572,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 
 
-Package natbib Warning: Citation `AGI_RES_2000' on page 2 undefined on input li
-ne 150.
-
-
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
  Make it at least 12.64503pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [2] (./L4_Travail_2.bbl)
-
-Package natbib Warning: There were undefined citations.
-
 
 Package Fancyhdr Warning: \headheight is too small (8.0pt): 
  Make it at least 12.64503pt.
@@ -2606,11 +2595,11 @@ Package rerunfilecheck Info: File `L4_Travail_2.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
  ) 
 Here is how much of TeX's memory you used:
- 45075 strings out of 492649
- 852735 string characters out of 6129621
- 1144776 words of memory out of 5000000
- 47756 multiletter control sequences out of 15000+600000
- 619809 words of font info for 245 fonts, out of 8000000 for 9000
+ 45081 strings out of 492649
+ 852842 string characters out of 6129621
+ 1144846 words of memory out of 5000000
+ 47760 multiletter control sequences out of 15000+600000
+ 618110 words of font info for 244 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  57i,13n,92p,10447b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
@@ -2623,10 +2612,10 @@ ype1/public/txfonts/txsy.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/ur
 w/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on L4_Travail_2.pdf (4 pages, 66230 bytes).
+Output written on L4_Travail_2.pdf (4 pages, 70312 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 22 named destinations out of 1000 (max. 500000)
- 62489 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 95 compressed objects within 1 object stream
+ 24 named destinations out of 1000 (max. 500000)
+ 61465 words of extra memory for PDF output out of 61914 (max. 10000000)
 
